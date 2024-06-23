@@ -9,8 +9,6 @@ const formData = localStorage.getItem('feedback-form-state')
   : { email: '', message: '' };
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded');
-    console.log('formData:', formData);
   email.value = formData.email;
   message.value = formData.message;
 });
